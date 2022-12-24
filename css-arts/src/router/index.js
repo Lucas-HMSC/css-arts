@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 
+import Spiderman from '@/arts/Spiderman.vue';
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: Spiderman
     },
     {
       // keeping this block of code to have a example of lazy-loading
